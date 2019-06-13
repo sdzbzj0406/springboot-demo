@@ -1,6 +1,9 @@
 package com.zhangjie.springbootdemo.service;
 
-public interface helloService {
+/**
+ * @author jason
+ */
+public interface HelloService {
 
     /**
      * sayHello
