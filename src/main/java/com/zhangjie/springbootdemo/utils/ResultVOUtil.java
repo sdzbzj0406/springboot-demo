@@ -1,8 +1,10 @@
 package com.zhangjie.springbootdemo.utils;
 
-
 import com.zhangjie.springbootdemo.VO.ResultVO;
 
+/**
+ * @author jason
+ */
 public class ResultVOUtil {
 
     public static ResultVO success(Object object){
@@ -17,11 +19,10 @@ public class ResultVOUtil {
         return success(null);
     }
 
-    public static ResultVO error(Integer code, String msg,Object o){
+    public static ResultVO error(Integer code, String msg){
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(code);
         resultVO.setMsg(msg);
-        resultVO.setData(o);
         return resultVO;
     }
 }

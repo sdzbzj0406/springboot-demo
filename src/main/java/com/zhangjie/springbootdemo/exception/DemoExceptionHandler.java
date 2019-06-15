@@ -15,6 +15,6 @@ public class DemoExceptionHandler {
     @ResponseBody
     @ExceptionHandler(value = DemoException.class)
     public ResultVO<?> handleSdcException(DemoException demo){
-        return ResultVOUtil.error(demo.getCode(),demo.getMessage(),demo.getData());
+        return ResultVOUtil.error(demo.getCode(),demo.getMessage());
     }
 }
